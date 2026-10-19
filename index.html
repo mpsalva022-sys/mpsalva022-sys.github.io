@@ -1,0 +1,1837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Paula Salva - Engineering student, founder of KAPE UNICO, and creative designer. Explore web development, design projects, and professional experience.">
+  <meta name="author" content="Paula Salva">
+  <title>Paula Salva | Engineering Student, Entrepreneur & Designer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Skip to Main Content for Accessibility -->
+  <a href="#home" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo" aria-label="Paula Salva Homepage">
+        <span class="logo-mark">PS</span>
+        <span class="logo-text">Paula Salva<span class="dot">.</span></span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#vision" class="nav-link">Vision &amp; Mission</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#seminars" class="nav-link">Seminars &amp; Trainings</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+
+        <!-- Dark/Light Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+          <span class="theme-toggle-label sr-only">Toggle theme</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       CINEMATIC SWISS LIVING HOME OFFICE BACKGROUND STAGE
+       Fixed scroll-driven animated environment spanning the ENTIRE portfolio
+       ========================================================================= -->
+  <div class="swiss-scene-container swiss-cinema-fixed" id="swissScene" aria-hidden="true">
+    <!-- Layer 1: Scenic Panoramic Base Artwork Viewport with all 8 Swiss scenes -->
+    <div class="scene-viewport" id="sceneViewport">
+      <!-- Section 1: Home / Hero -->
+      <div class="scene-frame active" data-scene="home" id="sceneFrame-home">
+        <img src="swiss_wfh_scene.jpg" alt="Home office with panoramic window overlooking Swiss Alps" class="scene-bg-img" id="sceneBgImgHome" loading="eager">
+      </div>
+      <!-- Section 2: About Me -->
+      <div class="scene-frame" data-scene="about" id="sceneFrame-about">
+        <img src="swiss_scene_about.jpg" alt="Woman pausing work and looking out towards Swiss Alps lake" class="scene-bg-img" id="sceneBgImgAbout" loading="eager">
+      </div>
+      <!-- Section 3: Vision & Mission -->
+      <div class="scene-frame" data-scene="vision" id="sceneFrame-vision">
+        <img src="swiss_scene_vision.jpg" alt="Woman writing vision and mission goals in notebook" class="scene-bg-img" id="sceneBgImgVision" loading="lazy">
+      </div>
+      <!-- Section 4: Skills -->
+      <div class="scene-frame" data-scene="skills" id="sceneFrame-skills">
+        <img src="swiss_scene_skills.jpg" alt="Close side angle typing and engineering logic diagram" class="scene-bg-img" id="sceneBgImgSkills" loading="lazy">
+      </div>
+      <!-- Section 5: Experience -->
+      <div class="scene-frame" data-scene="experience" id="sceneFrame-experience">
+        <img src="swiss_scene_experience.jpg" alt="Reviewing notes and reaching naturally for coffee mug" class="scene-bg-img" id="sceneBgImgExperience" loading="lazy">
+      </div>
+      <!-- Section 6: Seminars & Trainings -->
+      <div class="scene-frame" data-scene="seminars" id="sceneFrame-seminars">
+        <img src="swiss_scene_seminars.jpg" alt="Studying and reviewing certificate under desk lamp" class="scene-bg-img" id="sceneBgImgSeminars" loading="lazy">
+      </div>
+      <!-- Section 7: Projects -->
+      <div class="scene-frame" data-scene="projects" id="sceneFrame-projects">
+        <img src="swiss_scene_projects.jpg" alt="Designing wireframes and typing projects against Swiss panorama" class="scene-bg-img" id="sceneBgImgProjects" loading="lazy">
+      </div>
+      <!-- Section 8: Contact -->
+      <div class="scene-frame" data-scene="contact" id="sceneFrame-contact">
+        <img src="swiss_scene_contact.jpg" alt="Golden hour sunset holding warm coffee mug looking at Alps" class="scene-bg-img" id="sceneBgImgContact" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Layer 2: Alpine Lake Water Shimmer & Reflection Effect -->
+    <div class="scene-layer scene-lake-shimmer" id="sceneLakeShimmer">
+      <div class="water-ripple ripple-1"></div>
+      <div class="water-ripple ripple-2"></div>
+      <div class="water-glint glint-1"></div>
+      <div class="water-glint glint-2"></div>
+    </div>
+
+    <!-- Layer 3: Drifting Alpine Clouds -->
+    <div class="scene-layer scene-clouds" id="sceneClouds">
+      <div class="cloud-drift cloud-1"></div>
+      <div class="cloud-drift cloud-2"></div>
+      <div class="cloud-drift cloud-3"></div>
+      <div class="cloud-drift cloud-4"></div>
+    </div>
+
+    <!-- Layer 4: Dynamic Sunbeams, Daylight Shift & Golden Hour Radiances -->
+    <div class="scene-layer scene-sunlight" id="sceneSunlight">
+      <div class="sunbeam-glow"></div>
+      <div class="sunbeam-ray ray-left"></div>
+      <div class="sunbeam-ray ray-right"></div>
+      <div class="sunbeam-ray ray-center"></div>
+      <div class="golden-hour-glow" id="goldenHourGlow"></div>
+    </div>
+
+    <!-- Layer 5: HTML5 Canvas Ambient Floating Light Motes & Pollen -->
+    <canvas id="ambientMotesCanvas" class="ambient-motes-canvas"></canvas>
+
+    <!-- Layer 6: Workspace Living Details (Coffee Steam & Desk Lamp Halo & Screen Glow) -->
+    <div class="scene-layer scene-workspace" id="sceneWorkspace">
+      <div class="coffee-steam-wrap" id="coffeeSteamWrap" title="Fresh brewed coffee">
+        <span class="steam-wisp wisp-1"></span>
+        <span class="steam-wisp wisp-2"></span>
+        <span class="steam-wisp wisp-3"></span>
+      </div>
+      <div class="lamp-light-halo"></div>
+      <div class="screen-light-halo"></div>
+    </div>
+
+    <!-- Layer 7: Living Indoor Plants & Alpine Pine Sway -->
+    <div class="scene-layer scene-foliage" id="sceneFoliage" aria-hidden="true">
+      <div class="foliage-leaf leaf-monstera"></div>
+      <div class="foliage-leaf leaf-palm"></div>
+      <div class="foliage-branch pine-sway"></div>
+    </div>
+
+    <!-- Layer 8: Alpine Twilight & Starry Sky Overlay for Dark Mode -->
+    <div class="scene-layer scene-night" id="sceneNight">
+      <div class="night-stars"></div>
+      <div class="night-moon-glow"></div>
+    </div>
+
+    <!-- Layer 8: Readability Scrim (Ensures WCAG AAA contrast across all content) -->
+    <div class="scene-scrim" id="sceneScrim"></div>
+  </div>
+
+  <main id="main-content">
+    <!-- Hero / Home Section -->
+    <section class="hero" id="home" aria-label="Introduction">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="badge hero-badge">
+            <span class="badge-dot"></span>
+            <span>ENGINEERING STUDENT • CREATIVE • ENTREPRENEUR</span>
+          </div>
+
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-title">
+            PAULA <span class="highlight">SALVA</span>
+          </h1>
+
+          <p class="hero-description">
+            Welcome to my portfolio—a thoughtful showcase of my creative works,
+            web projects, and diverse experiences reflecting resilience,
+            entrepreneurial grit, and continuous growth.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <svg class="btn-arrow" viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Quick Highlight Pills -->
+          <div class="hero-highlights">
+            <div class="highlight-chip">
+              <span class="chip-icon">☕</span>
+              <span class="chip-text">Founder of <strong>KAPE UNICO</strong></span>
+            </div>
+            <div class="highlight-chip">
+              <span class="chip-icon">🏛</span>
+              <span class="chip-text">Public Health Advocate</span>
+            </div>
+            <div class="highlight-chip">
+              <span class="chip-icon">💻</span>
+              <span class="chip-text">Web &amp; Visual Design</span>
+            </div>
+          </div>
+
+          <!-- Mindset Tag (Inspired by Aakash portfolio) -->
+          <div class="hero-mindset">
+            <span class="mindset-prefix">// mindset</span>
+            <span class="mindset-text">Learn · Build · Adapt · Persevere</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-card">
+            <div class="portrait-frame">
+              <img src="PROFILE.jpg"
+                alt="Portrait of Paula Salva"
+                class="portrait-img"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="image-fallback">
+                <span class="fallback-title">PAULA SALVA</span>
+                <span class="fallback-sub">PROFILE.jpg</span>
+              </div>
+            </div>
+            <div class="portrait-caption">
+              <div class="caption-marker">✳</div>
+              <div class="caption-details">
+                <span class="caption-name">Paula Salva</span>
+                <span class="caption-meta">Antipolo City, Rizal, Philippines</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll to explore link -->
+      <div class="hero-scroll-explore">
+        <a href="#about" class="scroll-explore-link">
+          <span>Scroll to explore</span>
+          <span class="explore-arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section about-section" id="about" aria-label="About Paula Salva">
+      <div class="container">
+        <div class="section-heading text-center" data-reveal>
+          <span class="eyebrow">GET TO KNOW ME</span>
+          <h2>About Me<span class="dot">.</span></h2>
+          <p class="section-subtitle">
+            Every journey begins with a purpose, shaped by devotion, learning, and perseverance.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-visual" data-reveal>
+            <div class="about-photo-wrapper">
+              <div class="photo-accent-border"></div>
+              <img src="PROFILE01.jpg"
+                alt="Paula Salva sharing a personal milestone"
+                class="about-img"
+                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="image-fallback">
+                <span class="fallback-title">MY JOURNEY</span>
+                <span class="fallback-sub">PROFILE01.jpg</span>
+              </div>
+            </div>
+            <div class="floating-badge">
+              <span class="floating-icon">✦</span>
+              <span class="floating-text">Student • Mother • Wife • Entrepreneur</span>
+            </div>
+          </div>
+
+          <div class="about-text" data-reveal>
+            <div class="about-tag">
+              <span class="tag-gold">MY MULTIFACETED JOURNEY</span>
+            </div>
+
+            <h3 class="about-statement">
+              Driven by purpose. Growing through resilience and dedication.
+            </h3>
+
+            <p>
+              I am a dedicated engineering student, a loving mother and wife,
+              and a passionate café owner. Balancing rigorous academic studies,
+              family responsibilities, and my small business <strong>KAPE UNICO</strong> has
+              instilled in me deep values of discipline, patience, and meticulous time management.
+            </p>
+
+            <p>
+              I strive to grow both personally and professionally while pursuing my dreams,
+              providing for my family, and building a sustainable future through perseverance
+              and genuine determination.
+            </p>
+
+            <p>
+              My professional background spans public health surveillance, retail operations,
+              customer experience, and creative visual design. These diverse experiences give me a
+              unique, multifaceted perspective—strengthening my ability to adapt quickly, solve real-world
+              problems, and communicate with empathy.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar-card">
+                <div class="pillar-number">01</div>
+                <div>
+                  <h4>Engineering Discipline</h4>
+                  <p>Systematic problem solving and technical curiosity.</p>
+                </div>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-number">02</div>
+                <div>
+                  <h4>Entrepreneurial Spirit</h4>
+                  <p>Hands-on management and brand building with KAPE UNICO.</p>
+                </div>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-number">03</div>
+                <div>
+                  <h4>Community Commitment</h4>
+                  <p>Public health surveillance and community service.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Profile Overview (Inspired by Aakash portfolio) -->
+            <div class="about-quick-profile">
+              <div class="quick-profile-item">
+                <span class="quick-item-label">Status</span>
+                <span class="quick-item-val">Undergraduate Engineering Student</span>
+              </div>
+              <div class="quick-profile-item">
+                <span class="quick-item-label">Based In</span>
+                <span class="quick-item-val">Antipolo City, Rizal, Philippines</span>
+              </div>
+              <div class="quick-profile-item">
+                <span class="quick-item-label">Venture</span>
+                <span class="quick-item-val">Founder &amp; Owner, KAPE UNICO</span>
+              </div>
+              <div class="quick-profile-item">
+                <span class="quick-item-label">Public Service</span>
+                <span class="quick-item-val">Disease Surveillance Advocate</span>
+              </div>
+            </div>
+
+            <div class="about-cta">
+              <a href="#experience" class="text-link">
+                <span>Explore my professional journey</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="section vision-section" id="vision" aria-label="Vision and Mission">
+      <div class="container">
+        <div class="section-heading text-center" data-reveal>
+          <span class="eyebrow">PURPOSE &amp; DIRECTION</span>
+          <h2>Vision &amp; Mission<span class="dot">.</span></h2>
+          <p class="section-subtitle">
+            The core principles and aspirations steering my personal and professional life.
+          </p>
+        </div>
+
+        <div class="vision-grid">
+          <!-- Vision Card -->
+          <article class="vision-card" data-reveal>
+            <div class="vision-card-header">
+              <div class="vision-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+              </div>
+              <span class="vision-tag">ASPIRATION</span>
+            </div>
+            <h3>My Vision</h3>
+            <p>
+              To become a successful and well-rounded professional who harmoniously
+              combines technical knowledge, creative design, and entrepreneurship to make
+              a meaningful difference in my family, community, and chosen field. I envision
+              a future where continuous learning, compassion, and determination open
+              doors for long-term growth, leadership, and lasting success.
+            </p>
+            <div class="vision-points">
+              <div class="vision-point">
+                <span class="point-bullet">✓</span>
+                <span>Uniting engineering logic with creative aesthetics</span>
+              </div>
+              <div class="vision-point">
+                <span class="point-bullet">✓</span>
+                <span>Upholding family, community, and social responsibility</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mission Card -->
+          <article class="vision-card" data-reveal>
+            <div class="vision-card-header">
+              <div class="vision-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <span class="vision-tag">EXECUTION</span>
+            </div>
+            <h3>My Mission</h3>
+            <p>
+              To continuously improve my capabilities, deliver meaningful work, and
+              approach every endeavor with integrity, passion, and an open mind.
+              I aim to balance education, family life, and small business operations
+              while leveraging my skills to serve others, innovate creative ideas,
+              and build an inspiring, stable future.
+            </p>
+            <div class="vision-points">
+              <div class="vision-point">
+                <span class="point-bullet">✓</span>
+                <span>Approaching every challenge with perseverance and honesty</span>
+              </div>
+              <div class="vision-point">
+                <span class="point-bullet">✓</span>
+                <span>Delivering excellence across academics, business, and design</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills" aria-label="Skills & Capabilities">
+      <div class="container">
+        <div class="section-heading text-center" data-reveal>
+          <span class="eyebrow">WHAT I BRING TO THE TABLE</span>
+          <h2>Technical &amp; Creative Skills<span class="dot">.</span></h2>
+          <p class="section-subtitle">
+            A spectrum of creative design, web development, version control, and operational competencies.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Card 1: Web Design & Frontend -->
+          <article class="skill-card" data-reveal>
+            <div class="skill-card-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>Web Design &amp; UI</h3>
+            <p>
+              Designing clean, responsive, and user-friendly web pages with
+              attention to layout hierarchy, cross-device usability, and visual elegance.
+            </p>
+            <div class="skill-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive Web</span>
+            </div>
+          </article>
+
+          <!-- Skill Card 2: Graphic & Brand Design -->
+          <article class="skill-card" data-reveal>
+            <div class="skill-card-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <path d="M2 2l7.586 7.586"></path>
+                <circle cx="11" cy="11" r="2"></circle>
+              </svg>
+            </div>
+            <h3>Graphic Design &amp; Branding</h3>
+            <p>
+              Creating visual content, marketing collateral, promotional materials,
+              and cohesive branding graphics that communicate identity clearly.
+            </p>
+            <div class="skill-tags">
+              <span>Canva</span>
+              <span>Brand Identity</span>
+              <span>Visual Design</span>
+              <span>Logo &amp; Menus</span>
+            </div>
+          </article>
+
+          <!-- Skill Card 3: Layout & Composition -->
+          <article class="skill-card" data-reveal>
+            <div class="skill-card-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+            </div>
+            <h3>Layout &amp; Typography</h3>
+            <p>
+              Arranging text, imagery, and negative space into structured, aesthetic layouts
+              for digital platforms, presentations, and printed menus.
+            </p>
+            <div class="skill-tags">
+              <span>Typography</span>
+              <span>Composition</span>
+              <span>Poster Design</span>
+              <span>Visual Balance</span>
+            </div>
+          </article>
+
+          <!-- Skill Card 4: Programming & Scripting -->
+          <article class="skill-card" data-reveal>
+            <div class="skill-card-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3>Programming &amp; Logic</h3>
+            <p>
+              Applying foundational programming concepts, DOM manipulation,
+              and iterative debugging to develop practical web-based solutions.
+            </p>
+            <div class="skill-tags">
+              <span>JavaScript</span>
+              <span>DOM Manipulation</span>
+              <span>Algorithms</span>
+              <span>Debugging</span>
+            </div>
+          </article>
+
+          <!-- Skill Card 5: Version Control & Database -->
+          <article class="skill-card" data-reveal>
+            <div class="skill-card-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="18" cy="18" r="3"></circle>
+                <circle cx="6" cy="6" r="3"></circle>
+                <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                <line x1="6" y1="9" x2="6" y2="21"></line>
+              </svg>
+            </div>
+            <h3>Version Control &amp; Data</h3>
+            <p>
+              Managing source code repositories, tracking version history,
+              collaborating on GitHub, and structuring application databases.
+            </p>
+            <div class="skill-tags">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Branching</span>
+              <span>MongoDB</span>
+            </div>
+          </article>
+
+          <!-- Skill Card 6: Business & Public Health -->
+          <article class="skill-card" data-reveal>
+            <div class="skill-card-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>Business &amp; Health Operations</h3>
+            <p>
+              Customer service excellence, café management, inventory control,
+              teamwork, and municipal disease surveillance protocols.
+            </p>
+            <div class="skill-tags">
+              <span>Customer Service</span>
+              <span>Business Ops</span>
+              <span>Surveillance</span>
+              <span>Communication</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="section experience-section" id="experience" aria-label="Professional Experience">
+      <div class="container">
+        <div class="section-heading text-center" data-reveal>
+          <span class="eyebrow">MY CAREER TRAJECTORY</span>
+          <h2>Work Experience<span class="dot">.</span></h2>
+          <p class="section-subtitle">
+            A comprehensive track record across public health surveillance, entrepreneurship, technical support, retail operations, and brand advocacy.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1: Disease Surveillance Advocate -->
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-marker">
+              <div class="timeline-circle">01</div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-badge">Active Service</div>
+              <span class="timeline-period">January 2022 – June 2026</span>
+              <h3 class="timeline-role">Contact Tracer / Disease Surveillance Advocate</h3>
+              <h4 class="timeline-company">City Government of Antipolo</h4>
+              <p class="timeline-desc">
+                Dedicated public health service strengthening municipal systems for tracking, detecting,
+                and responding to infectious diseases and health hazards. Supporting early outbreak identification,
+                health surveillance reporting, and community preparedness.
+              </p>
+              <div class="experience-tags">
+                <span>Public Health</span>
+                <span>Disease Surveillance</span>
+                <span>Contact Tracing</span>
+                <span>Epidemiology Reporting</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 2: KAPE UNICO -->
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-marker">
+              <div class="timeline-circle">02</div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card timeline-card-highlight">
+              <div class="timeline-badge-gold">Entrepreneurship Highlight</div>
+              <span class="timeline-period">Ongoing Venture</span>
+              <h3 class="timeline-role">Café Owner &amp; Founder</h3>
+              <h4 class="timeline-company">KAPE UNICO</h4>
+              <p class="timeline-desc">
+                Directing daily operations and brand vision for a passion-driven coffee business.
+                Overseeing handcrafted product formulation, recipe standardization, pricing, visual menu design,
+                social media marketing campaigns, supplier relationships, and client satisfaction while balancing
+                engineering studies and family life.
+              </p>
+              <div class="experience-tags">
+                <span>Entrepreneurship</span>
+                <span>Marketing &amp; Branding</span>
+                <span>Menu Formulation</span>
+                <span>Business Management</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 3: Contact Tracer -->
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-marker">
+              <div class="timeline-circle">03</div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-badge">Public Health Response</div>
+              <span class="timeline-period">August 23, 2021 – December 30, 2021</span>
+              <h3 class="timeline-role">Contact Tracer</h3>
+              <h4 class="timeline-company">City Government of Antipolo</h4>
+              <p class="timeline-desc">
+                Frontline contact tracing and case monitoring during peak pandemic response.
+                Conducted systematic patient interviews, close-contact identification, quarantine compliance monitoring,
+                and daily case logging for the municipal health office.
+              </p>
+              <div class="experience-tags">
+                <span>Contact Tracing</span>
+                <span>COVID-19 Response</span>
+                <span>Case Investigation</span>
+                <span>Public Health</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 4: Denimiesters -->
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-marker">
+              <div class="timeline-circle">04</div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-badge-neutral">Brand Promotion</div>
+              <span class="timeline-period">October 25, 2019 – March 1, 2020</span>
+              <h3 class="timeline-role">Brand Ambassador</h3>
+              <h4 class="timeline-company">Denimiesters</h4>
+              <p class="timeline-desc">
+                Represented premium apparel and denim collections. Assisted shoppers with product selections,
+                conducted visual merchandising, supported inventory handling, and delivered positive brand experiences.
+              </p>
+              <div class="experience-tags">
+                <span>Brand Promotion</span>
+                <span>Customer Engagement</span>
+                <span>Visual Merchandising</span>
+                <span>Retail Support</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 5: JMS BPO -->
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-marker">
+              <div class="timeline-circle">05</div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-badge-neutral">BPO &amp; Communications</div>
+              <span class="timeline-period">June 6, 2019 – August 1, 2019</span>
+              <h3 class="timeline-role">Outbound Timeshare Agent</h3>
+              <h4 class="timeline-company">JMS Business Process Outsourcing</h4>
+              <p class="timeline-desc">
+                Conducted professional outbound telecommunications with international prospects,
+                presented vacation membership packages, managed appointment schedules, and maintained high call-quality metrics.
+              </p>
+              <div class="experience-tags">
+                <span>BPO Operations</span>
+                <span>Outbound Communication</span>
+                <span>Client Relations</span>
+                <span>Telemarketing</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 6: Tech Mahindra -->
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-marker">
+              <div class="timeline-circle">06</div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-badge">Technical Support</div>
+              <span class="timeline-period">January 22, 2019 – April 1, 2019</span>
+              <h3 class="timeline-role">Technical Support Agent</h3>
+              <h4 class="timeline-company">Tech Mahindra</h4>
+              <p class="timeline-desc">
+                Provided first-line technical support, hardware/software troubleshooting, connectivity diagnostic routines,
+                and ticket resolution for enterprise clients, developing systematic problem-solving discipline.
+              </p>
+              <div class="experience-tags">
+                <span>Technical Support</span>
+                <span>Hardware Diagnostics</span>
+                <span>Troubleshooting</span>
+                <span>IT Services</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 7: Elite Sales Force -->
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-marker">
+              <div class="timeline-circle">07</div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-badge-neutral">Sales &amp; Representation</div>
+              <span class="timeline-period">December 1, 2017 – May 1, 2018</span>
+              <h3 class="timeline-role">Brand Ambassador</h3>
+              <h4 class="timeline-company">Elite Sales Force International Inc.</h4>
+              <p class="timeline-desc">
+                Engaged consumers at retail stores and promotional events, delivered product demonstrations,
+                communicated brand value propositions, and supported product sales initiatives.
+              </p>
+              <div class="experience-tags">
+                <span>Sales Promotion</span>
+                <span>Product Demonstrations</span>
+                <span>Brand Advocacy</span>
+                <span>Customer Relations</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 8: SM Dept Store -->
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-marker">
+              <div class="timeline-circle">08</div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-badge-neutral">Retail Operations</div>
+              <span class="timeline-period">March 1, 2016 – August 1, 2016</span>
+              <h3 class="timeline-role">Sales Clerk</h3>
+              <h4 class="timeline-company">SM Dept. Store, Marikina</h4>
+              <p class="timeline-desc">
+                Delivered courteous in-store customer assistance, maintained organized product display aisles,
+                verified stock shipments, conducted inventory counts, and supported peak retail operations.
+              </p>
+              <div class="experience-tags">
+                <span>Customer Service</span>
+                <span>Retail Operations</span>
+                <span>Inventory Auditing</span>
+                <span>Stock Merchandising</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 9: Japan Home Centre -->
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-marker">
+              <div class="timeline-circle">09</div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-badge-neutral">POS &amp; Cash Operations</div>
+              <span class="timeline-period">July 1, 2015 – January 1, 2016</span>
+              <h3 class="timeline-role">Promo Cashier</h3>
+              <h4 class="timeline-company">Japan Home Centre</h4>
+              <p class="timeline-desc">
+                Operated point-of-sale (POS) registers, processed cash and card transactions, facilitated promotional campaign discounts,
+                handled customer inquiries, and balanced end-of-day register receipts.
+              </p>
+              <div class="experience-tags">
+                <span>POS Operations</span>
+                <span>Cash Handling</span>
+                <span>Customer Support</span>
+                <span>Retail Sales</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 10: Demo Power Phil. Inc. -->
+          <article class="timeline-item" data-reveal>
+            <div class="timeline-marker">
+              <div class="timeline-circle">10</div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-badge-neutral">Brand Activation</div>
+              <span class="timeline-period">September 2014 – June 1, 2015</span>
+              <h3 class="timeline-role">Brand Ambassador</h3>
+              <h4 class="timeline-company">Demo Power Phil. Inc.</h4>
+              <p class="timeline-desc">
+                Conducted in-store experiential product sampling, consumer engagement activations, introduced new consumer goods to shoppers,
+                and gathered shopper feedback for brand performance reports.
+              </p>
+              <div class="experience-tags">
+                <span>Brand Activation</span>
+                <span>Product Sampling</span>
+                <span>Consumer Engagement</span>
+                <span>Direct Marketing</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seminars & Trainings Section -->
+    <section class="section seminars-section" id="seminars" aria-label="Seminars and Professional Trainings">
+      <div class="container">
+        <div class="section-heading text-center" data-reveal>
+          <span class="eyebrow">CONTINUOUS LEARNING &amp; PROFESSIONAL DEVELOPMENT</span>
+          <h2>Seminars &amp; Trainings<span class="dot">.</span></h2>
+          <p class="section-subtitle">
+            A comprehensive record of technical seminars, public health surveillance summits, engineering workshops, and specialized training programs attended.
+          </p>
+        </div>
+
+        <!-- Seminar Category Filters -->
+        <div class="seminar-filters" data-reveal aria-label="Filter Seminars">
+          <button class="seminar-filter-btn active" data-filter="all">All Trainings (15)</button>
+          <button class="seminar-filter-btn" data-filter="engineering">Engineering &amp; Tech (9)</button>
+          <button class="seminar-filter-btn" data-filter="health">Public Health &amp; Surveillance (5)</button>
+          <button class="seminar-filter-btn" data-filter="creative">Creative &amp; Design (1)</button>
+        </div>
+
+        <!-- =========================================================================
+             HOW TO ADD A NEW SEMINAR ENTRY IN THE FUTURE:
+             1. Copy any <article class="seminar-card" ...> block below.
+             2. Set data-category to "engineering", "health", or "creative".
+             3. Update the date, category badge, title, speaker/organizer, description, and learnings tags.
+             4. Optional certificate: If you have an image, replace the verified badge with:
+                <a href="your-cert.jpg" class="certificate-btn certificate-preview" aria-label="Preview certificate">
+                  <span>View Certificate</span> <span aria-hidden="true">↗</span>
+                </a>
+                For a PDF certificate:
+                <a href="your-cert.pdf" target="_blank" rel="noopener noreferrer" class="certificate-btn">
+                  <span>View Certificate (PDF)</span> <span aria-hidden="true">↗</span>
+                </a>
+             ========================================================================= -->
+
+        <div class="seminars-grid" id="seminarsGrid">
+          <!-- Seminar 1: Offensive Security (October 17, 2026) -->
+          <article class="seminar-card" data-category="engineering" data-reveal>
+            <div class="seminar-card-header">
+              <span class="seminar-date">October 17, 2026</span>
+              <span class="seminar-type-badge">Offensive Security &amp; Cyber Career</span>
+            </div>
+            <h3 class="seminar-title">Securing the Future: Your Path to an Offensive Security Career</h3>
+            <div class="seminar-speaker">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Speaker: <strong>Mr. Edbert Vincent Sumicad</strong></span>
+            </div>
+            <p class="seminar-desc">
+              Advanced technical seminar outlining modern offensive cybersecurity pathways, ethical hacking methodologies, penetration testing frameworks, vulnerability research, and career development strategies.
+            </p>
+            <div class="seminar-learnings">
+              <span class="learning-tag">Offensive Security</span>
+              <span class="learning-tag">Penetration Testing</span>
+              <span class="learning-tag">Ethical Hacking</span>
+              <span class="learning-tag">Vulnerability Discovery</span>
+              <span class="learning-tag">Cyber Career Roadmap</span>
+            </div>
+            <div class="seminar-card-footer">
+              <span class="certificate-status-badge">
+                <span class="status-check">✓</span> Attendance Verified
+              </span>
+            </div>
+          </article>
+
+          <!-- Seminar 2: Biomedical Equipment (Sept 11, 2026) -->
+          <article class="seminar-card" data-category="engineering" data-reveal>
+            <div class="seminar-card-header">
+              <span class="seminar-date">September 11, 2026</span>
+              <span class="seminar-type-badge">Biomedical Engineering</span>
+            </div>
+            <h3 class="seminar-title">Bridging Electronic Theory and Field Practice in Biomedical Equipment Maintenance and Calibration</h3>
+            <div class="seminar-speaker">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Speaker: <strong>Mr. Kem Sarmiento Diaz</strong></span>
+            </div>
+            <p class="seminar-desc">
+              Specialized technical training focusing on translating circuit theory into clinical field applications, covering electronic calibration procedures, preventive maintenance routines, and safety standards for biomedical instrumentation.
+            </p>
+            <div class="seminar-learnings">
+              <span class="learning-tag">Biomedical Instrumentation</span>
+              <span class="learning-tag">Calibration Protocols</span>
+              <span class="learning-tag">Circuit Maintenance</span>
+              <span class="learning-tag">Healthcare Safety</span>
+            </div>
+            <div class="seminar-card-footer">
+              <span class="certificate-status-badge">
+                <span class="status-check">✓</span> Attendance Verified
+              </span>
+            </div>
+          </article>
+
+          <!-- Seminar 2: Real AI Applications (June 17, 2026) -->
+          <article class="seminar-card" data-category="engineering" data-reveal>
+            <div class="seminar-card-header">
+              <span class="seminar-date">June 17, 2026</span>
+              <span class="seminar-type-badge">Artificial Intelligence</span>
+            </div>
+            <h3 class="seminar-title">Beyond ChatGPT: Building Real AI Application</h3>
+            <div class="seminar-speaker">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Speaker: <strong>Engr. Jomar Liquido</strong></span>
+            </div>
+            <p class="seminar-desc">
+              Advanced technical exploration into real-world AI software development, transitioning beyond standard chat interfaces to constructing scalable AI pipelines, API integrations, and domain-specific intelligent systems.
+            </p>
+            <div class="seminar-learnings">
+              <span class="learning-tag">AI Application Architecture</span>
+              <span class="learning-tag">API Integration</span>
+              <span class="learning-tag">LLM Pipelines</span>
+              <span class="learning-tag">Software Engineering</span>
+            </div>
+            <div class="seminar-card-footer">
+              <span class="certificate-status-badge">
+                <span class="status-check">✓</span> Attendance Verified
+              </span>
+            </div>
+          </article>
+
+          <!-- Seminar 3: Digital Laws & Policies (April 28, 2026) -->
+          <article class="seminar-card" data-category="engineering" data-reveal>
+            <div class="seminar-card-header">
+              <span class="seminar-date">April 28, 2026</span>
+              <span class="seminar-type-badge">Digital Law &amp; Tech Policy</span>
+            </div>
+            <h3 class="seminar-title">Digital Laws, Policies, and Regulations in the Philippines</h3>
+            <div class="seminar-speaker">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Speaker: <strong>Engr. Michael Stephen Gorospe</strong></span>
+            </div>
+            <p class="seminar-desc">
+              Comprehensive briefing on the legal and regulatory framework governing digital systems in the Philippines, including data privacy compliance, cybersecurity legal standards, intellectual property, and tech governance.
+            </p>
+            <div class="seminar-learnings">
+              <span class="learning-tag">Data Privacy Act</span>
+              <span class="learning-tag">Cybercrime Prevention</span>
+              <span class="learning-tag">Regulatory Compliance</span>
+              <span class="learning-tag">Tech Governance</span>
+            </div>
+            <div class="seminar-card-footer">
+              <span class="certificate-status-badge">
+                <span class="status-check">✓</span> Attendance Verified
+              </span>
+            </div>
+          </article>
+
+          <!-- Seminar 4: Occupational Hazards (April 28, 2026) -->
+          <article class="seminar-card" data-category="health" data-reveal>
+            <div class="seminar-card-header">
+              <span class="seminar-date">April 28, 2026</span>
+              <span class="seminar-type-badge">Occupational Safety &amp; Health</span>
+            </div>
+            <h3 class="seminar-title">Occupational Hazards and Their Impact on Workers’ Health</h3>
+            <div class="seminar-speaker">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Speaker: <strong>Mr. Arrie Camello Orense</strong></span>
+            </div>
+            <p class="seminar-desc">
+              Workplace safety seminar addressing physical, chemical, biological, and ergonomic hazards, establishing risk mitigation procedures, hazard identification strategies, and worker well-being protections.
+            </p>
+            <div class="seminar-learnings">
+              <span class="learning-tag">Workplace Hazard Control</span>
+              <span class="learning-tag">Risk Assessment</span>
+              <span class="learning-tag">Ergonomics</span>
+              <span class="learning-tag">Worker Health Protection</span>
+            </div>
+            <div class="seminar-card-footer">
+              <span class="certificate-status-badge">
+                <span class="status-check">✓</span> Attendance Verified
+              </span>
+            </div>
+          </article>
+
+          <!-- Seminar 5: Bioinformatics & Digital Science (March 3, 2026) -->
+          <article class="seminar-card" data-category="engineering" data-reveal>
+            <div class="seminar-card-header">
+              <span class="seminar-date">March 3, 2026</span>
+              <span class="seminar-type-badge">Computational Biology</span>
+            </div>
+            <h3 class="seminar-title">Bioinformatics and Digital Science: Information in the Philippine Context</h3>
+            <div class="seminar-speaker">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Speaker: <strong>Dr. Ian Kendrich Fontanilla</strong></span>
+            </div>
+            <p class="seminar-desc">
+              Insightful presentation on genomic computational tools, biological data management, and the growth of digital science applications within national research institutions and health frameworks.
+            </p>
+            <div class="seminar-learnings">
+              <span class="learning-tag">Bioinformatics Data</span>
+              <span class="learning-tag">Digital Science</span>
+              <span class="learning-tag">Genomic Research</span>
+              <span class="learning-tag">Data Management</span>
+            </div>
+            <div class="seminar-card-footer">
+              <span class="certificate-status-badge">
+                <span class="status-check">✓</span> Attendance Verified
+              </span>
+            </div>
+          </article>
+
+          <!-- Seminar 6: Secure Networking for Smart Environment (March 3, 2026) -->
+          <article class="seminar-card" data-category="engineering" data-reveal>
+            <div class="seminar-card-header">
+              <span class="seminar-date">March 3, 2026</span>
+              <span class="seminar-type-badge">Cybersecurity &amp; IoT</span>
+            </div>
+            <h3 class="seminar-title">Advancing Secure Networking for Smart Environment: Design, Threat Modeling, and Mitigation Strategies</h3>
+            <div class="seminar-speaker">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Speaker: <strong>Engr. Mark Anthony Melendres</strong></span>
+            </div>
+            <p class="seminar-desc">
+              Rigorous network security workshop tackling connected smart devices, architectural threat modeling, encryption standards, perimeter intrusion defense, and systematic mitigation approaches.
+            </p>
+            <div class="seminar-learnings">
+              <span class="learning-tag">Smart Environment Security</span>
+              <span class="learning-tag">Threat Modeling</span>
+              <span class="learning-tag">Network Defense</span>
+              <span class="learning-tag">Mitigation Strategies</span>
+            </div>
+            <div class="seminar-card-footer">
+              <span class="certificate-status-badge">
+                <span class="status-check">✓</span> Attendance Verified
+              </span>
+            </div>
+          </article>
+
+          <!-- Seminar 7: Public Health Surveillance Summit 2025 (Nov 11, 2025) -->
+          <article class="seminar-card" data-category="health" data-reveal>
+            <div class="seminar-card-header">
+              <span class="seminar-date">November 11, 2025</span>
+              <span class="seminar-type-badge">Epidemiology &amp; Surveillance</span>
+            </div>
+            <h3 class="seminar-title">Public Health Surveillance Summit 2025</h3>
+            <div class="seminar-speaker">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+              </svg>
+              <span>Organizer: <strong>City Health Office — City Epidemiology Health Statistics Disaster &amp; Response Unit</strong></span>
+            </div>
+            <div class="seminar-venue">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Session Hall 8th Floor, Antipolo City Hall Annex Building</span>
+            </div>
+            <p class="seminar-desc">
+              High-level strategic summit assessing municipal health metrics, epidemic early-warning systems, disaster epidemiology protocols, and coordinated health crisis management strategies.
+            </p>
+            <div class="seminar-learnings">
+              <span class="learning-tag">Epidemic Detection</span>
+              <span class="learning-tag">Disaster Health Statistics</span>
+              <span class="learning-tag">Crisis Preparedness</span>
+              <span class="learning-tag">Public Health Response</span>
+            </div>
+            <div class="seminar-card-footer">
+              <span class="certificate-status-badge">
+                <span class="status-check">✓</span> Attendance Verified
+              </span>
+            </div>
+          </article>
+
+          <!-- Seminar 8: AI in Aviation Systems (Oct 23, 2025) -->
+          <article class="seminar-card" data-category="engineering" data-reveal>
+            <div class="seminar-card-header">
+              <span class="seminar-date">October 23, 2025</span>
+              <span class="seminar-type-badge">Aviation &amp; AI</span>
+            </div>
+            <h3 class="seminar-title">The Integration of AI in Aviation Systems</h3>
+            <div class="seminar-speaker">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Speaker: <strong>Mr. Victor Yrañela, ECT, MEAM</strong></span>
+            </div>
+            <p class="seminar-desc">
+              Study of avionics automation, flight management machine learning models, predictive aeronautical maintenance, and the integration of artificial intelligence into critical flight systems.
+            </p>
+            <div class="seminar-learnings">
+              <span class="learning-tag">Aviation Electronics</span>
+              <span class="learning-tag">Predictive Maintenance</span>
+              <span class="learning-tag">AI Avionics Integration</span>
+              <span class="learning-tag">System Reliability</span>
+            </div>
+            <div class="seminar-card-footer">
+              <span class="certificate-status-badge">
+                <span class="status-check">✓</span> Attendance Verified
+              </span>
+            </div>
+          </article>
+
+          <!-- Seminar 9: Robotics & Intelligent Automation (Oct 23, 2025) -->
+          <article class="seminar-card" data-category="engineering" data-reveal>
+            <div class="seminar-card-header">
+              <span class="seminar-date">October 23, 2025</span>
+              <span class="seminar-type-badge">Robotics &amp; Automation</span>
+            </div>
+            <h3 class="seminar-title">Empowering Filipino Innovation: Harnessing Robotics and AI in the Age of Intelligent Automation</h3>
+            <div class="seminar-speaker">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Speaker: <strong>Engr. Felomino Bacquiano III, MBA, ECE, ECT</strong></span>
+            </div>
+            <p class="seminar-desc">
+              Empowering session on local robotic design, smart manufacturing trends, microcontroller integration, and driving homegrown technological solutions through intelligent automation.
+            </p>
+            <div class="seminar-learnings">
+              <span class="learning-tag">Robotics Engineering</span>
+              <span class="learning-tag">Intelligent Automation</span>
+              <span class="learning-tag">Local Tech Innovation</span>
+              <span class="learning-tag">Embedded Systems</span>
+            </div>
+            <div class="seminar-card-footer">
+              <span class="certificate-status-badge">
+                <span class="status-check">✓</span> Attendance Verified
+              </span>
+            </div>
+          </article>
+
+          <!-- Seminar 10: Advancing Research & Developments (March 6, 2025) -->
+          <article class="seminar-card" data-category="engineering" data-reveal>
+            <div class="seminar-card-header">
+              <span class="seminar-date">March 6, 2025</span>
+              <span class="seminar-type-badge">Engineering Research</span>
+            </div>
+            <h3 class="seminar-title">Advancing Research and Developments: Innovations and Future Directions</h3>
+            <div class="seminar-speaker">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Speaker: <strong>Engr. Mark Anthony Melendres</strong></span>
+            </div>
+            <p class="seminar-desc">
+              Academic and industrial research methodology workshop emphasizing engineering experimental design, technological prototyping, technical validation, and modern R&amp;D pathways.
+            </p>
+            <div class="seminar-learnings">
+              <span class="learning-tag">Research Methodologies</span>
+              <span class="learning-tag">Technical Prototyping</span>
+              <span class="learning-tag">Engineering Innovation</span>
+              <span class="learning-tag">R&amp;D Frameworks</span>
+            </div>
+            <div class="seminar-card-footer">
+              <span class="certificate-status-badge">
+                <span class="status-check">✓</span> Attendance Verified
+              </span>
+            </div>
+          </article>
+
+          <!-- Seminar 11: Disease Surveillance Program Review (July 11, 2024) -->
+          <article class="seminar-card" data-category="health" data-reveal>
+            <div class="seminar-card-header">
+              <span class="seminar-date">July 11, 2024</span>
+              <span class="seminar-type-badge">Healthcare Operations</span>
+            </div>
+            <h3 class="seminar-title">City Disease Surveillance and Response Program Implementation Review for Partner Hospitals</h3>
+            <div class="seminar-speaker">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+              </svg>
+              <span>Organizer: <strong>City Health Office — City Epidemiology Health Statistics Disaster &amp; Response Unit</strong></span>
+            </div>
+            <div class="seminar-venue">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Session Hall 2nd Floor, Brgy. Bagong Nayon</span>
+            </div>
+            <p class="seminar-desc">
+              Collaborative multi-hospital review focused on disease reporting consistency, health facility referral compliance, epidemiological case validation, and synchronizing hospital-to-city communication.
+            </p>
+            <div class="seminar-learnings">
+              <span class="learning-tag">Hospital Surveillance</span>
+              <span class="learning-tag">Disease Reporting Compliance</span>
+              <span class="learning-tag">Inter-facility Coordination</span>
+              <span class="learning-tag">Health Data Quality</span>
+            </div>
+            <div class="seminar-card-footer">
+              <span class="certificate-status-badge">
+                <span class="status-check">✓</span> Attendance Verified
+              </span>
+            </div>
+          </article>
+
+          <!-- Seminar 12: HIV/AIDS 101, SOGIESC Orientation (Feb 2, 2024) -->
+          <article class="seminar-card" data-category="health" data-reveal>
+            <div class="seminar-card-header">
+              <span class="seminar-date">February 2, 2024</span>
+              <span class="seminar-type-badge">Public Health &amp; Inclusivity</span>
+            </div>
+            <h3 class="seminar-title">HIV/AIDS 101, SOGIESC Orientation</h3>
+            <div class="seminar-speaker">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+              </svg>
+              <span>Organizer: <strong>City Health Office — City Epidemiology Health Statistics Disaster &amp; Response Unit</strong></span>
+            </div>
+            <div class="seminar-venue">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Social Hygiene Clinic / CHO</span>
+            </div>
+            <p class="seminar-desc">
+              Health education and advocacy workshop covering HIV/AIDS epidemiology, confidential testing protocols, harm reduction counseling, and fostering inclusive, non-discriminatory healthcare environments.
+            </p>
+            <div class="seminar-learnings">
+              <span class="learning-tag">HIV/AIDS Epidemiology</span>
+              <span class="learning-tag">SOGIESC Awareness</span>
+              <span class="learning-tag">Community Health Advocacy</span>
+              <span class="learning-tag">Patient Inclusivity</span>
+            </div>
+            <div class="seminar-card-footer">
+              <span class="certificate-status-badge">
+                <span class="status-check">✓</span> Attendance Verified
+              </span>
+            </div>
+          </article>
+
+          <!-- Seminar 13: EDCS-IS & PIDSR 101 Workshop (March 6, 2023) -->
+          <article class="seminar-card" data-category="health" data-reveal>
+            <div class="seminar-card-header">
+              <span class="seminar-date">March 6, 2023</span>
+              <span class="seminar-type-badge">Health Information Systems</span>
+            </div>
+            <h3 class="seminar-title">Epidemic-Prone Disease Case Surveillance (EDCS-IS) and PIDSR 101 Workshop to Partner Hospitals</h3>
+            <div class="seminar-speaker">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+              </svg>
+              <span>Organizer: <strong>City Health Office — City Epidemiology Health Statistics Disaster &amp; Response Unit</strong></span>
+            </div>
+            <p class="seminar-desc">
+              Technical operations workshop on the Philippine Integrated Disease Surveillance and Response (PIDSR) framework and the Electronic Disease Case Surveillance Information System (EDCS-IS) software.
+            </p>
+            <div class="seminar-learnings">
+              <span class="learning-tag">EDCS-IS System</span>
+              <span class="learning-tag">PIDSR Protocols</span>
+              <span class="learning-tag">Case Investigation Reports</span>
+              <span class="learning-tag">Surveillance Software</span>
+            </div>
+            <div class="seminar-card-footer">
+              <span class="certificate-status-badge">
+                <span class="status-check">✓</span> Attendance Verified
+              </span>
+            </div>
+          </article>
+
+          <!-- Seminar 14: Canva Graphic Design (March 12, 2022) -->
+          <article class="seminar-card" data-category="creative" data-reveal>
+            <div class="seminar-card-header">
+              <span class="seminar-date">March 12, 2022</span>
+              <span class="seminar-type-badge">Visual &amp; Graphic Design</span>
+            </div>
+            <h3 class="seminar-title">Introduction to Canva Graphic Design</h3>
+            <div class="seminar-speaker">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                <circle cx="11" cy="11" r="2"></circle>
+              </svg>
+              <span>Organizer: <strong>FHMOMS, INC.</strong></span>
+            </div>
+            <p class="seminar-desc">
+              Foundational creative training covering digital composition, visual marketing collateral, layout hierarchy, color harmonizing, and branding asset preparation for digital and print media.
+            </p>
+            <div class="seminar-learnings">
+              <span class="learning-tag">Canva Suite</span>
+              <span class="learning-tag">Visual Composition</span>
+              <span class="learning-tag">Typography Hierarchy</span>
+              <span class="learning-tag">Branding Collateral</span>
+            </div>
+            <div class="seminar-card-footer">
+              <span class="certificate-status-badge">
+                <span class="status-check">✓</span> Attendance Verified
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section projects-section" id="projects" aria-label="Featured Projects">
+      <div class="container">
+        <div class="section-heading text-center" data-reveal>
+          <span class="eyebrow">PORTFOLIO SHOWCASE</span>
+          <h2>Featured Projects<span class="dot">.</span></h2>
+          <p class="section-subtitle">
+            A curated collection of web development applications, version control milestones, and creative branding projects.
+          </p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters" data-reveal aria-label="Filter Projects">
+          <button class="filter-btn active" data-filter="all">All Works (5)</button>
+          <button class="filter-btn" data-filter="web">Web &amp; Systems</button>
+          <button class="filter-btn" data-filter="branding">Branding &amp; Creative</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1: Tourmana.ph -->
+          <article class="project-card" data-category="web" data-reveal>
+            <div class="project-image-box">
+              <a href="tourmana.png" class="project-preview-link project-preview" aria-label="Preview Tourmana.ph full interface" data-secondary-image="tourmana01.png">
+                <img src="tourmana.png"
+                  alt="Tourmana.ph Philippine tourism web application preview"
+                  loading="lazy"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="image-fallback">
+                  <span>PROJECT IMAGE</span>
+                  <small>tourmana.png</small>
+                </div>
+                <div class="preview-overlay">
+                  <span class="preview-zoom-btn">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="11" y1="8" x2="11" y2="14"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                    <span>Enlarge Preview</span>
+                  </span>
+                </div>
+              </a>
+              <span class="project-pill">Web Development</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="meta-label">ACADEMIC &amp; TOURISM PLATFORM</span>
+              </div>
+              <h3 class="project-title">Tourmana.ph</h3>
+              <p class="project-summary">
+                A rich tourism-focused web platform concept highlighting premier Philippine destinations,
+                local heritage, travel itineraries, and cultural landmarks with an inviting, modern UI.
+              </p>
+
+              <div class="tech-stack">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="tourmana.png" class="action-btn action-preview project-preview" data-secondary-image="tourmana01.png">
+                  <span>View Screenshots</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#contact" class="action-btn action-inquire">
+                  <span>Inquire</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Project Nexus -->
+          <article class="project-card" data-category="web" data-reveal>
+            <div class="project-image-box">
+              <a href="Projectnexus.jpg" class="project-preview-link project-preview" aria-label="Preview Project Nexus version control repository">
+                <img src="Projectnexus.jpg"
+                  alt="Project Nexus repository and Git workflow overview"
+                  loading="lazy"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="image-fallback">
+                  <span>PROJECT IMAGE</span>
+                  <small>Projectnexus.jpg</small>
+                </div>
+                <div class="preview-overlay">
+                  <span class="preview-zoom-btn">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="11" y1="8" x2="11" y2="14"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                    <span>Enlarge Preview</span>
+                  </span>
+                </div>
+              </a>
+              <span class="project-pill">Version Control</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="meta-label">GITHUB &amp; COLLABORATION</span>
+              </div>
+              <h3 class="project-title">Project Nexus</h3>
+              <p class="project-summary">
+                A collaborative software development repository exploring Git workflows, feature branching,
+                commit hygiene, pull request reviews, and synchronized multi-contributor version control.
+              </p>
+
+              <div class="tech-stack">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Branching</span>
+                <span>Repository Architecture</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="Projectnexus.jpg" class="action-btn action-preview project-preview">
+                  <span>View Repository Screen</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#contact" class="action-btn action-inquire">
+                  <span>Inquire</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: KAPE UNICO Branding -->
+          <article class="project-card" data-category="branding" data-reveal>
+            <div class="project-image-box">
+              <a href="kapeunico.png" class="project-preview-link project-preview" aria-label="Preview KAPE UNICO brand identity mark">
+                <img src="kapeunico.png"
+                  alt="KAPE UNICO signature logo and branding mark"
+                  loading="lazy"
+                  class="logo-contained"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="image-fallback">
+                  <span>BRAND LOGO</span>
+                  <small>kapeunico.png</small>
+                </div>
+                <div class="preview-overlay">
+                  <span class="preview-zoom-btn">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="11" y1="8" x2="11" y2="14"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                    <span>Enlarge Logo</span>
+                  </span>
+                </div>
+              </a>
+              <span class="project-pill">Brand Identity</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="meta-label">BUSINESS &amp; VISUAL IDENTITY</span>
+              </div>
+              <h3 class="project-title">KAPE UNICO Branding</h3>
+              <p class="project-summary">
+                Comprehensive visual identity created for my coffee enterprise: logo design, color guidelines,
+                cup packaging, customer touchpoints, and marketing assets built to convey warmth and quality.
+              </p>
+
+              <div class="tech-stack">
+                <span>Canva</span>
+                <span>Brand Guidelines</span>
+                <span>Packaging Design</span>
+                <span>Marketing</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="kapeunico.png" class="action-btn action-preview project-preview">
+                  <span>View Logo Identity</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61569423824608" target="_blank" rel="noopener noreferrer" class="action-btn action-inquire">
+                  <span>Visit FB Page</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Graphic Design & Matcha Branding -->
+          <article class="project-card" data-category="branding" data-reveal>
+            <div class="project-image-box">
+              <a href="matcha.jpg" class="project-preview-link project-preview" aria-label="Preview Matcha beverage marketing collateral">
+                <img src="matcha.jpg"
+                  alt="Matcha series promotional poster and menu design"
+                  loading="lazy"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="image-fallback">
+                  <span>DESIGN POSTER</span>
+                  <small>matcha.jpg</small>
+                </div>
+                <div class="preview-overlay">
+                  <span class="preview-zoom-btn">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="11" y1="8" x2="11" y2="14"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                    <span>Enlarge Poster</span>
+                  </span>
+                </div>
+              </a>
+              <span class="project-pill">Visual Design</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="meta-label">MARKETING &amp; POSTER ART</span>
+              </div>
+              <h3 class="project-title">Graphic &amp; Layout Design</h3>
+              <p class="project-summary">
+                Promotional poster series and menu advertisements spotlighting specialty matcha creations,
+                utilizing balanced typography, color harmonization, and appealing product composition.
+              </p>
+
+              <div class="tech-stack">
+                <span>Canva</span>
+                <span>Visual Composition</span>
+                <span>Advertising Layout</span>
+                <span>Social Media</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="matcha.jpg" class="action-btn action-preview project-preview">
+                  <span>View Poster</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#contact" class="action-btn action-inquire">
+                  <span>Inquire</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: KAPE UNICO Menu & Creations -->
+          <article class="project-card" data-category="branding" data-reveal>
+            <div class="project-image-box">
+              <a href="coffee1.jpg" class="project-preview-link project-preview" aria-label="Preview KAPE UNICO coffee menu and creations" data-secondary-image="coffee2.jpg">
+                <img src="coffee1.jpg"
+                  alt="KAPE UNICO coffee product showcases and promotional menu"
+                  loading="lazy"
+                  onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="image-fallback">
+                  <span>MENU DESIGN</span>
+                  <small>coffee1.jpg</small>
+                </div>
+                <div class="preview-overlay">
+                  <span class="preview-zoom-btn">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                      <line x1="11" y1="8" x2="11" y2="14"></line>
+                      <line x1="8" y1="11" x2="14" y2="11"></line>
+                    </svg>
+                    <span>Enlarge Menu</span>
+                  </span>
+                </div>
+              </a>
+              <span class="project-pill">Product Marketing</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="meta-label">MENU ARCHITECTURE &amp; SALES</span>
+              </div>
+              <h3 class="project-title">KAPE UNICO Coffee Series</h3>
+              <p class="project-summary">
+                Visual menus and product displays showcasing handcrafted coffee beverages,
+                flavor profiles, ingredient highlights, and promotional bundles crafted to entice customers.
+              </p>
+
+              <div class="tech-stack">
+                <span>Menu Layout</span>
+                <span>Food &amp; Beverage</span>
+                <span>Print &amp; Digital</span>
+                <span>Promotions</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="coffee1.jpg" class="action-btn action-preview project-preview" data-secondary-image="coffee2.jpg">
+                  <span>View Showcase</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#contact" class="action-btn action-inquire">
+                  <span>Inquire</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact" aria-label="Contact Paula Salva">
+      <div class="container">
+        <div class="section-heading text-center" data-reveal>
+          <span class="eyebrow">LET'S CONNECT</span>
+          <h2>Get in Touch<span class="dot">.</span></h2>
+          <p class="section-subtitle">
+            Whether you have an inquiry, potential collaboration, creative project, or just want to chat—feel free to reach out.
+          </p>
+        </div>
+
+        <div class="contact-card-wrapper" data-reveal>
+          <!-- Contact Info Left Column -->
+          <div class="contact-info-panel">
+            <div class="info-badge">OPEN FOR OPPORTUNITIES</div>
+            <h3 class="info-title">Let's talk about your next project or idea.</h3>
+            <p class="info-desc">
+              I am always eager to apply my technical, creative, and organizational skills
+              to purposeful projects and forward-thinking collaborations.
+            </p>
+
+            <div class="contact-methods">
+              <!-- Email -->
+              <div class="contact-method-item">
+                <div class="method-icon" aria-hidden="true">✉</div>
+                <div class="method-content">
+                  <span class="method-label">Email</span>
+                  <div class="email-row">
+                    <a href="mailto:mp.salva022@gmail.com" id="contactEmailLink" class="method-link">mp.salva022@gmail.com</a>
+                    <button type="button" class="copy-email-btn" id="copyEmailBtn" aria-label="Copy email address" title="Copy email address">
+                      <span id="copyIcon">📋</span>
+                    </button>
+                  </div>
+                  <small class="copy-hint" id="copyFeedback" aria-live="polite"></small>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-method-item">
+                <div class="method-icon" aria-hidden="true">☎</div>
+                <div class="method-content">
+                  <span class="method-label">Phone</span>
+                  <a href="tel:+639926554822" class="method-link">+63 992 655 4822</a>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-method-item">
+                <div class="method-icon" aria-hidden="true">📍</div>
+                <div class="method-content">
+                  <span class="method-label">Location</span>
+                  <span class="method-text">Antipolo City, Rizal, Philippines</span>
+                </div>
+              </div>
+
+              <!-- Facebook -->
+              <div class="contact-method-item">
+                <div class="method-icon" aria-hidden="true">🌐</div>
+                <div class="method-content">
+                  <span class="method-label">Personal Facebook</span>
+                  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="method-link">
+                    facebook.com/paula.salva
+                    <span class="external-indicator">↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Business Facebook -->
+              <div class="contact-method-item business-highlight">
+                <div class="method-icon" aria-hidden="true">☕</div>
+                <div class="method-content">
+                  <span class="method-label">KAPE UNICO Official Page</span>
+                  <a href="https://www.facebook.com/profile.php?id=61569423824608" target="_blank" rel="noopener noreferrer" class="method-link">
+                    facebook.com/kapeunico
+                    <span class="external-indicator">↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Right Column -->
+          <div class="contact-form-panel">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <p class="form-subtitle">Fill in the fields below to prepare and send your inquiry directly.</p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Your Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="e.g. Maria Santos" required autocomplete="name">
+                <span class="input-feedback" id="nameFeedback"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="e.g. maria@example.com" required autocomplete="email">
+                <span class="input-feedback" id="emailFeedback"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject / Inquiry Type</label>
+                <input type="text" id="subject" name="subject" placeholder="e.g. Web Project / Coffee Inquiries / Collaboration">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Share your project goals, questions, or message..." required></textarea>
+                <span class="input-feedback" id="messageFeedback"></span>
+              </div>
+
+              <button type="submit" class="btn btn-submit" id="submitBtn">
+                <span>Send Message</span>
+                <svg class="btn-arrow" viewBox="0 0 16 16" width="14" height="14" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+                </svg>
+              </button>
+
+              <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-mark">PS</span>
+          <span class="logo-text">Paula Salva<span class="dot">.</span></span>
+        </a>
+        <p class="footer-tagline">Crafted with engineering dedication, creativity, and a fresh cup of coffee.</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#vision">Vision</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#seminars">Seminars &amp; Trainings</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© <span id="year"></span> Paula Salva. All rights reserved.</p>
+        <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top of page">
+          <span>Back to top</span>
+          <span aria-hidden="true">↑</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Project Image Preview Modal (Lightbox) -->
+  <div class="image-modal" id="imageModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog">
+      <button class="modal-close" id="modalClose" aria-label="Close image preview">×</button>
+      <div class="modal-image-wrapper">
+        <img id="modalImage" src="" alt="Project image preview">
+      </div>
+      <div class="modal-caption-bar">
+        <span id="modalTitle" class="modal-title">Project Preview</span>
+        <div id="modalSecondaryToggle" class="modal-secondary-box" style="display: none;">
+          <button type="button" class="btn-sub-view" id="btnToggleSubView">View Alternative Screen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
